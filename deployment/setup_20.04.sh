@@ -339,7 +339,7 @@ function setup_chatwoot() {
   rvm use 3.3.3 --default
 
   # git clone https://github.com/chatwoot/chatwoot.git
-  git clone https://github.com/atikrahmanbd/chattool.git
+  git clone https://github.com/atikrahmanbd/chatwoot.git
   cd chatwoot
   git checkout "$BRANCH"
   bundle
