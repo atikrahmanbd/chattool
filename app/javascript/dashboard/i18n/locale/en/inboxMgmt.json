@@ -690,9 +690,9 @@
         "WIDGET_BUBBLE_POSITION_LABEL": "Widget Bubble Position",
         "WIDGET_BUBBLE_TYPE_LABEL": "Widget Bubble Type",
         "WIDGET_BUBBLE_LAUNCHER_TITLE": {
-          "DEFAULT": "Chat with us",
+          "DEFAULT": "Start Chatting",
           "LABEL": "Widget Bubble Launcher Title",
-          "PLACE_HOLDER": "Chat with us"
+          "PLACE_HOLDER": "Start Chatting"
         },
         "UPDATE": {
           "BUTTON_TEXT": "Update Widget Settings",
@@ -735,7 +735,7 @@
         "USER_MESSAGE": "Hi",
         "AGENT_MESSAGE": "Hello"
       },
-      "BRANDING_TEXT": "Powered by Chatwoot",
+      "BRANDING_TEXT": "Self-Hosted By Multilat",
       "SCRIPT_SETTINGS": "\n      window.chatwootSettings = {options};"
     },
     "EMAIL_PROVIDERS": {

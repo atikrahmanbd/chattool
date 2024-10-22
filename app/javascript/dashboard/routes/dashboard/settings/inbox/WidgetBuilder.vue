@@ -183,7 +183,7 @@ export default {
           return item;
         });
         this.widgetBubbleLauncherTitle =
-          savedInformation.launcherTitle || 'Chat with us';
+          savedInformation.launcherTitle || 'Start Chatting';
       }
     },
     handleWidgetBubblePositionChange(item) {

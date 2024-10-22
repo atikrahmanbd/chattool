@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
     <title>woot-log</title>
     <desc>Created with Sketch.</desc>
     <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="woot-log" fill-rule="nonzero">
-            <circle id="Oval" fill="#47A7F6" cx="256" cy="256" r="256"></circle>
-            <path d="M362.807947,368.807947 L244.122956,368.807947 C178.699407,368.807947 125.456954,315.561812 125.456954,250.12177 C125.456954,184.703089 178.699407,131.456954 244.124143,131.456954 C309.565494,131.456954 362.807947,184.703089 362.807947,250.12177 L362.807947,368.807947 Z" id="Fill-1" stroke="#FFFFFF" stroke-width="6" fill="#FFFFFF"></path>
+    <defs>
+        <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <!-- <stop offset="0%" style="stop-color:#EEB32E; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#E2215B; stop-opacity:1" /> -->
+            <stop offset="0%" style="stop-color:#000; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#000; stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <defs>
+      <radialGradient id="myRadialGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+          <stop offset="0%" style="stop-color:#444; stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#000; stop-opacity:1" />
+      </radialGradient>
+  </defs>
+
+    <!-- Use the gradient to fill the circle -->
+    <circle cx="256" cy="256" r="256" fill="url(#myRadialGradient)" />
+        <g id="woot-log" fill-rule="nonzero" fill="#FFFFFF" stroke="none" transform="translate(128, 128)">
+            <path d="M243.5-.3H12.5C5.6-.3,0,5.4,0,12.2v231C0,250.1,5.6,255.7,12.5,255.7h81.8l24.9,24.9c4.9,4.9,12.8,4.9,17.7,0l24.9-24.9h81.8c6.9,0,12.5-5.6,12.5-12.5V12.2c0-6.9-5.6-12.5-12.5-12.5ZM201.6,156.6c-.5,3.4-2.5,6.4-5.3,8.3-19.2,16.8-43.6,26.4-69.1,27.2-25.5-.9-49.9-10.5-69.1-27.3-3-2.8-4.4-7-3.7-11.1.7-4.1,3.5-7.5,7.3-9.2,3.8-1.6,8.2-1.2,11.6,1.1,36.8,29.4,70.9,29.4,107.7,0h0c2.5-2.2,5.9-3.4,9.3-3.2,3.4.2,6.6,1.9,8.8,4.6,2.1,2.7,3.1,6.2,2.5,9.6Z"/>
         </g>
     </g>
 </svg>
+
+
+
+
+

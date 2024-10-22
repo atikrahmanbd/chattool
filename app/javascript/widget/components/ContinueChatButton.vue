@@ -10,7 +10,7 @@ export default {
     },
     content: {
       type: String,
-      default: 'Chat with us',
+      default: 'Start Chatting',
     },
     unreadCount: {
       type: Number,

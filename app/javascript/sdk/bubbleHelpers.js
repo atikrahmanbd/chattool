@@ -3,7 +3,7 @@ import { IFrameHelper } from './IFrameHelper';
 import { isExpandedView } from './settingsHelper';
 
 export const bubbleSVG =
-  'M240.808 240.808H122.123C56.6994 240.808 3.45695 187.562 3.45695 122.122C3.45695 56.7031 56.6994 3.45697 122.124 3.45697C187.566 3.45697 240.808 56.7031 240.808 122.122V240.808Z';
+  'M243.5-.3H12.5C5.6-.3,0,5.4,0,12.2v231C0,250.1,5.6,255.7,12.5,255.7h81.8l24.9,24.9c4.9,4.9,12.8,4.9,17.7,0l24.9-24.9h81.8c6.9,0,12.5-5.6,12.5-12.5V12.2c0-6.9-5.6-12.5-12.5-12.5ZM201.6,156.6c-.5,3.4-2.5,6.4-5.3,8.3-19.2,16.8-43.6,26.4-69.1,27.2-25.5-.9-49.9-10.5-69.1-27.3-3-2.8-4.4-7-3.7-11.1.7-4.1,3.5-7.5,7.3-9.2,3.8-1.6,8.2-1.2,11.6,1.1,36.8,29.4,70.9,29.4,107.7,0h0c2.5-2.2,5.9-3.4,9.3-3.2,3.4.2,6.6,1.9,8.8,4.6,2.1,2.7,3.1,6.2,2.5,9.6Z';
 
 export const body = document.getElementsByTagName('body')[0];
 export const widgetHolder = document.createElement('div');
@@ -52,7 +52,7 @@ export const createBubbleIcon = ({ className, path, target }) => {
   }
 
   target.className = bubbleClassName;
-  target.title = 'Open chat window';
+  target.title = 'Open Chat Window';
   return target;
 };
 
