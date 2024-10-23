@@ -66,12 +66,12 @@ export default {
     <h2
       v-dompurify-html="introHeading"
       class="mt-4 text-2xl mb-1.5 font-medium"
-      :class="getThemeClass('text-slate-100', 'dark:text-slate-50')"
+      :class="getThemeClass('text-slate-50', 'dark:text-white')"
     />
     <p
       v-dompurify-html="introBody"
       class="text-base leading-normal"
-      :class="getThemeClass('text-slate-300', 'dark:text-slate-200')"
+      :class="getThemeClass('text-slate-100', 'dark:text-slate-50')"
     />
   </header>
 </template>
