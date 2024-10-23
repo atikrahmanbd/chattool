@@ -25,6 +25,23 @@ export default {
       default: false,
     },
   },
+  computed: {
+    ...mapGetters({
+      widgetColor: 'appConfig/getWidgetColor',
+    }),
+    textColor() {
+      return getContrastingTextColor(this.widgetColor);
+    },
+    isOnline() {
+      const { workingHoursEnabled } = this.channelConfig;
+      const anyAgentOnline = this.availableAgents.length > 0;
+
+      if (workingHoursEnabled) {
+        return this.isInBetweenTheWorkingHours;
+      }
+      return anyAgentOnline;
+    },
+  },
   setup() {
     const { getThemeClass } = useDarkMode();
     return { getThemeClass };
@@ -35,10 +52,7 @@ export default {
 <template>
   <header
     class="header-expanded pt-6 pb-4 px-5 relative box-border w-full bg-transparent"
-    :style="{
-      color: widgetColor,
-      background: `linear-gradient(0deg, rgb(0, 0, 0) 0%, ${widgetColor} 100%)`
-    }"
+    :style="{background: `linear-gradient(0deg, rgb(0, 0, 0) 0%, ${widgetColor} 100%)`}"
   >
     <div
       class="flex items-start"
