@@ -134,9 +134,9 @@ export const SDK_CSS = `
 
 .woot-widget-bubble svg {
   all: revert;
-  height: 32px;
-  margin: 6.5px 0px 0px;
-  width: 32px;
+  height: 36px;
+  margin: 9.25px 0px 0px;
+  width: 36px;
 }
 
 .woot-widget-bubble.woot-widget-bubble-color--lighter path{
