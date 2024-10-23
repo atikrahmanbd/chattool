@@ -35,6 +35,10 @@ export default {
 <template>
   <header
     class="header-expanded pt-6 pb-4 px-5 relative box-border w-full bg-transparent"
+    :style="{
+      color: widgetColor,
+      background: `linear-gradient(0deg, rgb(0, 0, 0) 0%, ${widgetColor} 100%)`
+    }"
   >
     <div
       class="flex items-start"
@@ -42,7 +46,7 @@ export default {
     >
       <img
         v-if="avatarUrl"
-        class="h-12 rounded-full"
+        class="h-12 p-2 rounded-full bg-white shadow-md"
         :src="avatarUrl"
         alt="Avatar"
       />
