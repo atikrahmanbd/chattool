@@ -1,6 +1,7 @@
 <script>
 import HeaderActions from './HeaderActions.vue';
 import { useDarkMode } from 'widget/composables/useDarkMode';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'ChatHeaderExpanded',
@@ -31,16 +32,7 @@ export default {
     }),
     textColor() {
       return getContrastingTextColor(this.widgetColor);
-    },
-    isOnline() {
-      const { workingHoursEnabled } = this.channelConfig;
-      const anyAgentOnline = this.availableAgents.length > 0;
-
-      if (workingHoursEnabled) {
-        return this.isInBetweenTheWorkingHours;
-      }
-      return anyAgentOnline;
-    },
+    }
   },
   setup() {
     const { getThemeClass } = useDarkMode();
